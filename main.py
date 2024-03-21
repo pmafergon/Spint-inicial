@@ -1,4 +1,5 @@
 # ****entrada del ticket de compra****
+import datetime as dt
 
 def entradaticket(totalproductos):
     producto = input("Ingrese el producto: ")
@@ -53,3 +54,5 @@ for i in range(len(ticketcliente)):
     if ticketcliente[i]  != []:
         print(ticketcliente[i], end="\n")
 print(f"El precio total del ticket es {sum(totalcliente)}€")
+fecha=dt.datetime.today()
+print(f"Fecha de compra: {fecha.strftime('%d-%m-%Y, %H:%M')}")
